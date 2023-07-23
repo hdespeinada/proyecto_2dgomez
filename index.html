@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desiree Gomez </title>
+
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <script src="https://kit.fontawesome.com/6b58a299ae.js" crossorigin="anonymous"></script>
+    <script src="codigo.js"></script>
+<style>
+body{margin: 0;}
+        .navbar{
+            height: 90px;
+            display: flex;
+            justify-content: right;
+            align-items:center;
+            list-style: none;
+        }
+        .nav_toggle{
+            display: none;
+        }
+
+        .nav_items a{
+            margin: 0px;
+            color: white;
+            list-style: none;
+        }
+
+@media (max-width: 767px){
+    .nav_items{
+           position: absolute;
+           top:  60px;
+           left: 0;
+           background: #be84b3;
+           border-radius: ;
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+           width: 100%;
+           height: 100%;
+           transform: translateX(-100%);
+        }
+
+        .nav_toggle{
+            display: flex !important;
+            flex-direction: column;
+            margin: 15px;
+        }
+        .nav_toggle span{
+            width: 30px;
+            height: 4px;
+            background: white;
+            margin-bottom: 5px;
+            border-radius: 2px;
+            transform-origin: 5px 0px;
+        }
+    .close span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .close span:nth-child(2){
+        display: none;
+    }
+    .close span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .open{transform: translateX(0) !important};
+}
+</style>
+
+</head>
+<body>
+<header>
+            <div class="contenedorimg">
+                <img src="img/Iniciales desiree.png" alt="Imagen-Logo" width="100/">
+            </div> 
+
+<div class="contenedorUP">
+<p class="Titulo-grande"> Desirée Gómez</p>
+
+</div>     
+
+<nav class="navbar">
+    <div class="nav_items" id="_items">
+        <ul>
+            <li><a href="Home">Quién soy</a></li>
+            <li><a href="Mi_Onepage">Mi Onepage</a></li>
+            <li><a href="Portafolio">Portafolio</a></li>
+            <li><a href="Keeping_Touch">Keeping Touch</a></li>   
+        </ul>
+    </div>
+    <div class="nav_toggle" id="_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+<script>
+    _toggle.onclick = () =>{
+        _items.classList.toggle("open")
+    }
+</script>
+</header>
+
+<main>
+    <div class="contenedor">
+        <img class="imagen-presentacion" src="img/edificio.jpeg" alt="" margin="0 auto">
+    </div> 
+
+<section id="Home">
+    <h1>
+    <a href="">¿Quién soy?</a>
+    <p>Soy una emprendedora social, carpintera y diseñadora de oficio, ingeniera civil de profesión con mas de 10 años de experiencia en proyectos IPC.</p>
+    <p>Como parte de mi crecimiento y adaptación al cambio desde hace 3 años estoy aprendiendo Análisis de Datos y ahora me creo Programadora Fron-End, conozco de Visual Studio Code, Coda, Phyton, SQL, HTML.5, CSS, Java Script.</p>
+    <p>Si sacas cuentas aprendí en Pandemia, no vi televisón, tampoco hornee pan. ¡Tareas pendientes, quizás!.</p> 
+    <p>Te invito a conocer un poco de mí, en mi primera OnePage. Aprovecho y dejo mas abajo el link de mi emprendimiento para que lo conozcas</p>
+</h1>
+</section>
+
+        </div>
+
+    <section id="Mi_Onepage">
+        <h2>
+            <a href="">Mi Onepage</a>
+            <p> Bievenid@s a mi primera página Portafolio en donde podrás descubrir quien soy y que hago en programación web. 
+                Les cuento que la programación en la universidad fué para mí, El Terror! confieso que fué la única asignatura 
+                que postergue cursar hasta cuando se pudiera, tuve miedo al computador (ordenador), a los errores y no entendia 
+                nada de lógica, nada de nada.
+                
+                Admito que ha sido un cambio 180°, mi clases guiadas han sido en Código Pa lante  un progrma de cursos para no pragrmadores 
+                de Eidos Global. 
+                Estudiar Programación Front-End ha tenido un impacto positivo en mi. 
+                Ahora valoro mucho mas el trabajo de los programadores, el tiempo que se dedica detrás de la pantalla siendo el cerebro 
+                y desarrolladora me llena de una sensación mágica.
+                Gracias a que conozco y he puesto en práctica CSS, java script he podido perfeccionar y organizar la página web de mi 
+                emprendimiento, que originalmente contrate su creación y ahora estoy re diseñando con lo aprendido.</p>
+        </h2>
+    </section>
+ 
+
+    <section id="Portafolio">
+        <h2>
+            <a href="">Portafolio</a>
+            <p> Como te contaba este es mi primer trabajo, por lo que estás navegando en la versión Beta de mi trabajo. Estoy en construcción</p>
+        </h2>
+    </section>
+
+    <section id="Keeping_Touch">
+        <h3>
+            <a href=""> Keeping Touch</a>
+            <p>El networking es parte de mi vida diaria, me encanta hacer redes y contacto. Soy voluntaria en una Red de mujeres en Datos.
+            Me encuentras en todas las RRSS como @soydesireegomez. Trato de estar activa en todas.
+            Comparto información de tecnología, de negocios, de ingeniería, de ciencia de datos. Y me salgo un poco de la rutina seria con algunas publicaciones que destaquen 
+            alguna parte de mi vida y logros personales. Pienso que eso conecta mucho con el público.
+            Aqui abajo te dejo la liga de mis redes sociales para que estemos keeping touch y si te interesa mi perfil, me encantaría tener una entrevista y comenzar mi primera experiencia laboral en esta área.
+            Por lo que tambien puedes descargar mi cv.
+    </section>
+
+
+<div class="button">
+<a href="https://drive.google.com/file/d/14zpLOuwQp7YGpUKnLE_-c86oE4DFxX-_/view?usp=sharing" target="_blank"><button class="Boton-1" type="button">Descarga mi CV</button>
+</a>
+</div>
+
+    <section>
+       <div class="botones-contacto">     
+    <a href="http://www.linkedin.com/in/desiree-gomez-stem-bi-speaker-consultora" target="_blank">
+        <img src="img/linkedin.png" alt="botones-contacto">
+
+    <a href="https://instagram.com/soydesireegomez" target="_blank">
+         <img src="img/github.png" alt="botones-contacto">
+
+    <a href="http://www.linkedin.com/in/desiree-gomez-stem-bi-speaker-consultora" target="_blank">
+         <img src="img/mail.png" alt="botones-contacto">
+    </div>
+    </section>
+
+    <div class="algo aqui">
+        <a href="https://instagram.com/soydesireegomez" target="_blank"><button class="algo aqui" type="button">yakera</button>
+            <img src="img/logo yakera para desi.png" alt="botones-contacto">
+        </a>
+    </div>
+
+    <section>
+        <footer class="Pie-de-pagina">
+            <div class="Pie-de-pagina">
+            <div class="Código Latam">
+            <h4>Página diseñada por @soydesireegomez</h4>
+            <h4>Proyecto 2 Cod-latam @2023 july</h4>
+            </div>
+        </footer>
+    </section>
+
+</main>
+</body>
+</html>
